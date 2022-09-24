@@ -1,4 +1,4 @@
-import CardGame from '../CardGame';
+import CardGame from '../../CardGame';
 
 const BoardGame = (amountCards) => {
   const $htmlCardGame = CardGame();

@@ -1,20 +1,24 @@
 import './src/styles/elements/base.css';
 import './src/styles/settings/colors.css';
 import './src/styles/generic/reset.css';
+import './src/styles/settings/global.css';
 
-import CardGame from './src/components/CardGame';
-import PlayerNumber from './src/components/PlayerNumber';
-import BoardGame from './src/components/Objects';
+import PlayerName from './src/components/PlayerName';
+import BoardGame from './src/components/Objects/BoardGame';
 
 const $root = document.querySelector('#root');
-const $htmlBoardGame = BoardGame(6);
 
-const $htmlPlayerNumber = PlayerNumber(1) + PlayerNumber(2);
+$root.insertAdjacentHTML(
+  'afterbegin',
+  `
+ ${PlayerName('Player 1')}
+ ${PlayerName('Plater 2')}
+ ${BoardGame(6)}
 
-$root.insertAdjacentHTML('afterbegin', $htmlPlayerNumber + $htmlBoardGame);
+  `
+);
 
 const $card = document.querySelectorAll('#card-struct');
-
 $card.forEach((card) => {
   const $cardImage = card.firstElementChild;
 
