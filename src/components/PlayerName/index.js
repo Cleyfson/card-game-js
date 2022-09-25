@@ -1,7 +1,7 @@
 import './style.css';
 
 const PlayerName = (name) => {
-  return `
+  return /*html*/ `
     <p class="player-name" >${name}</p>
   `;
 };

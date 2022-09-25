@@ -6,7 +6,7 @@ const BoardGame = (amountCards) => {
   const $htmlCardGame = CardGame();
   const $htmlBoardGame = $htmlCardGame.repeat(amountCards);
 
-  return `
+  return /*html*/ `
     <section class='board-game'>
       ${$htmlBoardGame};
     </section>
