@@ -35,7 +35,6 @@ $ npm install
 
 # Execute the appliction with this command
 $ npm run dev
-$ yarn dev
 
 # The server will start in the port:3000
 
