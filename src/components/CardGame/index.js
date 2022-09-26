@@ -1,9 +1,9 @@
 import './style.css';
 
-const CardGame = () => {
+const CardGame = (icon = 'alura', alt = 'logo da alura') => {
   return /*html*/ `
     <article id="card-struct" class='card-game'>
-      <img id="card-image" class="card-image" src='../../../images/alura-pixel1.png'>
+      <img id="card-image" class="card-image" src='../../../images/${icon}.png' alt='${alt}'>
     </article>
   `;
 };
