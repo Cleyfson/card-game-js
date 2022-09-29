@@ -2,17 +2,21 @@ import CardGame from '../CardGame';
 import './style.css';
 
 const CardFrontBack = () => {
+  window.cardFrontBack = {};
+  window.cardFrontBack.handleClick = (event) => {
+    const $origing = event.target;
+    const $cardFrontBack = $origing.closest('.card-front-back');
+
+    $cardFrontBack.classList.toggle('-active');
+  };
+
   return /*html*/ `
-    <article class='card-front-back'>
+    <article class='card-front-back' onclick='cardFrontBack.handleClick(event)'>
       <div class='card -front'>
-        ${CardGame('alura', 'logo da alura')}
-        ${CardGame('alura', 'logo da alura')}
         ${CardGame('alura', 'logo da alura')}
       </div>
       <div class='card -back'>
         ${CardGame('javascript', 'logo do javascript')}
-        ${CardGame('css', 'logo do css')}
-        ${CardGame('html', 'logo do html')}
       </div>
     </article>
   `;

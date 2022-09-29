@@ -12,15 +12,6 @@ $root.insertAdjacentHTML(
   'afterbegin',
   `
   ${ScoreBoard()}
-  ${BoardGame(2)}
+  ${BoardGame(6)}
   `
 );
-
-// const $card = document.querySelectorAll('#card-struct');
-// $card.forEach((card) => {
-//   const $cardImage = card.firstElementChild;
-
-//   card.addEventListener('click', () => {
-//     $cardImage.classList.toggle('card-image-active');
-//   });
-// });
