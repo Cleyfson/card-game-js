@@ -4,8 +4,8 @@ import './style.css';
 const CardFrontBack = () => {
   window.cardFrontBack = {};
   window.cardFrontBack.handleClick = (event) => {
-    const $origing = event.target;
-    const $cardFrontBack = $origing.closest('.card-front-back');
+    const $origin = event.target;
+    const $cardFrontBack = $origin.closest('.card-front-back');
 
     $cardFrontBack.classList.toggle('-active');
   };
