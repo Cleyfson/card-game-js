@@ -2,13 +2,33 @@ import './style.css';
 
 import CardFrontBack from '../../components/CardFrontBack';
 
-const BoardGame = (amountCards) => {
-  const $htmlCardFrontBack = CardFrontBack();
-  const $htmlBoardGame = $htmlCardFrontBack.repeat(amountCards);
+const BoardGame = () => {
+  const cards = [
+    {
+      icon: 'javascript',
+      alt: 'javascript logo',
+    },
+    {
+      icon: 'html',
+      alt: 'html logo',
+    },
+    {
+      icon: 'css',
+      alt: 'css logo',
+    },
+  ];
+
+  const $htmlCardsList = cards.map((card) => {
+    return (
+      CardFrontBack(card.icon, card.alt) + CardFrontBack(card.icon, card.alt)
+    );
+  });
+
+  const $htmlCards = $htmlCardsList.join('');
 
   return /*html*/ `
     <section class='board-game'>
-      ${$htmlBoardGame}
+      ${$htmlCards}
     </section>
   `;
 };
