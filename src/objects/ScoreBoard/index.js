@@ -6,11 +6,11 @@ import './style.css';
 const ScoreBoard = () => {
   return /*html*/ `
     <header class='score-board'>
-      ${PlayerName('Player 1')}
-      ${PlayerScore()}
+      ${PlayerName('Player1')}
+      ${PlayerScore(1)}
       ${VsPlayer()}
-      ${PlayerScore()}
-      ${PlayerName('Plater 2')}
+      ${PlayerScore(1)}
+      ${PlayerName('Player2')}
     </header>
   `;
 };
