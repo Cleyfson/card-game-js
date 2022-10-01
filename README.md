@@ -1,6 +1,6 @@
 ## About the project:
 
-card-game
+this project is an application made in order to develop and deepen my skills with javascript. Applying in practice the knowledge for the development of a card game.
 
 ## Layout of the Application:
 
