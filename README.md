@@ -25,7 +25,7 @@ this project is an application made in order to develop and deepen my skills wit
 ```bash
 
 # Clone the Repository
-$ git clone https://github.com/Cleyfson/drive.git
+$ git clone https://github.com/Cleyfson/card-game-js.git
 
 # Enter the poject folder in the Terminal
 $ cd drive
