@@ -28,7 +28,7 @@ this project is an application made in order to develop and deepen my skills wit
 $ git clone https://github.com/Cleyfson/card-game-js.git
 
 # Enter the poject folder in the Terminal
-$ cd drive
+$ cd card-game-js
 
 # Install all the dependencies
 $ npm install
